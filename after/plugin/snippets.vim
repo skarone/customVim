@@ -1,1 +1,1 @@
-call ExtractSnipsFile(g:snippets_dir.'python.snippets', 'python')
+call ExtractSnipsFile(g:snippets_dir.'customPython.snippets', 'python')
