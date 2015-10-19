@@ -33,7 +33,6 @@ function! MoveToAttributesInMethodClass(type, back, visual)
 	else
 		let dir = '/'
 	endif
-	echom pattern
 	execute 'silent normal! ' . dir . pattern . "\r"
 endfunction
 
@@ -52,6 +51,5 @@ function! MoveToMethodClassName(type, back, visual)
 	else
 		let dir = '/'
 	endif
-	echom pattern
 	execute 'silent normal! ' . dir . pattern . "\r"
 endfunction
