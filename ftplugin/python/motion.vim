@@ -58,8 +58,8 @@ endfunction
 nnoremap <Leader>f :call CreateMethodForInnerWord()<cr>
 
 function! CreateMethodForInnerWord()
-	normal! ma
-	execute 'normal! "pyiwo' . "\<Del>\rdef" ."\<esc>i\<right>\<c-r>=TriggerSnippet()" . "\r"
+	normal! ma<cr>
+	execute 'normal! "pyiwo' . "\<BS>\<Del>\rdef" ."\<esc>i\<right>\<c-r>=TriggerSnippet()" . "\r"
 	execute 'normal! ' ."\<Del>" . 'h"pp' . "\r"
-	normal! `a
+	normal! `a<cr>
 endfunction
